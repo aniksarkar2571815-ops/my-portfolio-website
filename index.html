@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anik Sarker | Software Engineering Student</title>
+  <meta name="description" content="Portfolio of Anik Sarker, undergraduate Software Engineering student interested in software development and Artificial Intelligence.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      var h = document.documentElement;
+      h.classList.add("js");
+      try {
+        var calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (!sessionStorage.getItem("booted") && !calm) {
+          h.classList.add("booting");
+          // safety net: never leave the boot screen stuck
+          setTimeout(function () { h.classList.remove("booting"); }, 6000);
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+<div class="boot" id="boot" aria-hidden="true">
+  <div class="boot-in">
+    <pre id="boot-log"></pre>
+    <div class="boot-bar"><i id="boot-fill"></i></div>
+    <p class="boot-hint">click or press any key to skip</p>
+  </div>
+</div>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="head">
+  <a class="brand" href="#home"><span class="g">~/</span>anik-sarker<span class="cur" aria-hidden="true">_</span></a>
+  <button class="theme" id="theme" aria-label="Switch light or dark mode">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13.5A9 9 0 1 1 10.5 3a7 7 0 0 0 10.5 10.5z"/></svg>
+    <span id="theme-label">Light</span>
+  </button>
+</header>
+
+<main id="main">
+
+<section id="home" class="bento">
+
+  <div class="win term">
+    <div class="bar"><i></i><i></i><i></i><span>anik@portfolio: ~</span></div>
+    <div class="body">
+      <p class="cmd"><span class="g">$</span> whoami</p>
+      <h1>Anik Sarker</h1>
+      <p class="cmd"><span class="g">$</span> cat role.txt</p>
+      <p class="role"><span id="typed" data-words="Software Engineering Student|AI Enthusiast|Problem Solver|Future Software Engineer">Software Engineering Student</span><span class="caret" aria-hidden="true"></span></p>
+      <p class="cmd"><span class="g">$</span> cat about.txt</p>
+      <p class="lead">Passionate about technology, software development and Artificial Intelligence. I turn creative ideas into practical, user-focused software.</p>
+      <div class="actions">
+        <a class="btn" href="#projects">./view-project</a>
+        <a class="btn soft" href="https://drive.google.com/file/d/1YyKf83YKSpC0LuVSrxwxlMHvFMIq4taV/view?usp=sharing" target="_blank" rel="noopener">./download-cv</a>
+      </div>
+    </div>
+  </div>
+
+  <figure class="win photo">
+    <div class="bar"><i></i><i></i><i></i><span>profile.jpg</span></div>
+    <img src="images/anik-sarker.jpg" alt="Photo of Anik Sarker" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+  </figure>
+
+  <div class="win code">
+    <div class="bar"><i></i><i></i><i></i><span>anik.js</span></div>
+<pre class="body" aria-label="Profile as a JavaScript object"><code><span class="c">// who am i, in code</span>
+<span class="k">const</span> <span class="v">anik</span> = {
+  <span class="p">role</span>: <span class="s">"Software Engineering Student"</span>,
+  <span class="p">focus</span>: [<span class="s">"Software Development"</span>, <span class="s">"Artificial Intelligence"</span>],
+  <span class="p">project</span>: <span class="s">"AI Internship &amp; Job Recommendation"</span>,
+  <span class="p">learning</span>: <span class="k">true</span>,
+  <span class="p">goal</span>: <span class="s">"Skilled Software Engineer"</span>
+};</code></pre>
+  </div>
+
+  <div class="win stats">
+    <div><strong>1</strong><span>AI project</span></div>
+    <div><strong>3</strong><span>certificates</span></div>
+    <div><strong>&infin;</strong><span>curiosity</span></div>
+  </div>
+
+  <div class="win links">
+    <div class="bar"><i></i><i></i><i></i><span>find-me.sh</span></div>
+    <ul class="body">
+      <li><a href="https://github.com/aniksarkar2571815-ops" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/anik-sarkar-44a0943b1/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://www.facebook.com/share/19Bik6agmG/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a></li>
+    </ul>
+  </div>
+
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track"><span>Software Engineering ✦</span><span>Artificial Intelligence ✦</span><span>Problem Solving ✦</span><span>Discrete Mathematics ✦</span><span>Computer Architecture ✦</span><span>Recommendation Systems ✦</span><span>Clean Code ✦</span><span>Always Learning ✦</span><span>Software Engineering ✦</span><span>Artificial Intelligence ✦</span><span>Problem Solving ✦</span><span>Discrete Mathematics ✦</span><span>Computer Architecture ✦</span><span>Recommendation Systems ✦</span><span>Clean Code ✦</span><span>Always Learning ✦</span></div></div>
+
+<section id="about">
+  <p class="label">// 01 about</p>
+  <h2>A little about me</h2>
+  <div class="two">
+    <div class="prose">
+      <p>I am an undergraduate Software Engineering student passionate about technology, software development, and Artificial Intelligence. I enjoy solving complex problems and transforming creative ideas into practical software solutions.</p>
+      <p>I have academic project experience, including developing an AI-Based Internship and Job Recommendation System. I am continuously improving my programming skills, technical knowledge, and problem-solving abilities. I am passionate about learning new technologies, exploring innovative ideas, and building user-focused applications.</p>
+      <p>My goal is to become a skilled Software Engineer and contribute to impactful projects in the technology industry.</p>
+      <ul class="chips" aria-label="Interests">
+        <li>Software development</li><li>Artificial Intelligence</li><li>Problem solving</li><li>User-focused apps</li></ul>
+    </div>
+    <div class="win">
+      <div class="bar"><i></i><i></i><i></i><span>profile.json</span></div>
+      <dl class="facts body">
+        <div><dt>name</dt><dd>"Anik Sarker"</dd></div>
+        <div><dt>degree</dt><dd>"BSc in Software Engineering"</dd></div>
+        <div><dt>interests</dt><dd>["Software", "AI"]</dd></div>
+        <div><dt>goal</dt><dd>"Skilled Software Engineer"</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <p class="label">// 02 project</p>
+  <h2>Something I have built</h2>
+
+  <article class="win project">
+    <div class="bar"><i></i><i></i><i></i><span>ai-internship-job-recommendation/</span></div>
+    <div class="pj">
+      <img src="images/AI-Powered Career Opportunities.png" alt="Diagram of the Internship and Job Recommendation project" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+      <div class="pad">
+        <h3>AI Based Internship and Job Recommendation</h3>
+        <p>A system that suggests suitable internships and jobs to students based on their skills, interests and goals.</p>
+        <ul class="chips small"><li>Use case diagram</li><li>draw.io</li><li>Analysis</li></ul>
+        <p class="card-links">
+          <a href="https://docs.google.com/document/d/1syWJ7Z28q0Y_tYYw5zMAXo09c0L5TUGS/edit?usp=sharing&ouid=106652027343193547397&rtpof=true&sd=true" target="_blank" rel="noopener">Report</a>
+          <a href="https://github.com/aniksarkar2571815-ops" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section id="skills">
+  <p class="label">// 03 skills</p>
+  <h2>What I work with</h2>
+  <div class="levels">
+    <div class="win">
+      <div class="bar"><i></i><i></i><i></i><span>core.sh</span></div>
+      <div class="body"><ul class="chips"><li>Programming</li><li>Problem solving</li><li>Software development</li></ul></div>
+    </div>
+    <div class="win">
+      <div class="bar"><i></i><i></i><i></i><span>foundations.sh</span></div>
+      <div class="body"><ul class="chips"><li>Discrete mathematics</li><li>Computer architecture</li></ul></div>
+    </div>
+    <div class="win">
+      <div class="bar"><i></i><i></i><i></i><span>exploring.sh</span></div>
+      <div class="body"><ul class="chips"><li>Artificial Intelligence</li><li>New technologies</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="journey">
+  <p class="label">// 04 journey</p>
+  <h2>My path so far</h2>
+
+  <div class="tabs" role="tablist" aria-label="Journey">
+    <button role="tab" id="tab-edu" aria-controls="panel-edu" aria-selected="true">education.json</button>
+    <button role="tab" id="tab-exp" aria-controls="panel-exp" aria-selected="false" tabindex="-1">experience.js</button>
+    <button role="tab" id="tab-cert" aria-controls="panel-cert" aria-selected="false" tabindex="-1">certificates/</button>
+  </div>
+
+  <div role="tabpanel" id="panel-edu" aria-labelledby="tab-edu" class="panel">
+    <ol class="steps">
+      <li><time>now</time><h3>BSc in Software Engineering</h3><p>Undergraduate student building a foundation in programming, mathematics, computer architecture and software development.</p></li>
+    </ol>
+  </div>
+
+  <div role="tabpanel" id="panel-exp" aria-labelledby="tab-exp" class="panel" hidden>
+    <ol class="steps">
+      <li><time>project</time><h3>AI Based Internship and Job Recommendation System</h3><p>Academic project: a system that recommends internships and jobs to students based on their profile.</p></li>
+      <li><time>now</time><h3>Software Engineering student</h3><p>Continuously improving programming skills and problem-solving abilities.</p></li>
+    </ol>
+  </div>
+
+  <div role="tabpanel" id="panel-cert" aria-labelledby="tab-cert" class="panel" hidden>
+    <div class="grid certs">
+      <figure class="card">
+        <button class="cert-open" data-full="images/cert-discrete-math.jpg" aria-label="Enlarge certificate: Introduction to Discrete Mathematics"><img src="images/cert-discrete-math.jpg" alt="Wolfram U completion certificate: Introduction to Discrete Mathematics" onerror="this.onerror=null;this.src='images/placeholder.svg'"></button>
+        <figcaption class="pad"><h3>Introduction to Discrete Mathematics</h3><p>Wolfram U, April 2026</p></figcaption>
+      </figure>
+      <figure class="card">
+        <button class="cert-open" data-full="images/cert-computer-architecture.jpg" aria-label="Enlarge certificate: CS301 Computer Architecture"><img src="images/cert-computer-architecture.jpg" alt="Saylor University certificate: CS301 Computer Architecture" onerror="this.onerror=null;this.src='images/placeholder.svg'"></button>
+        <figcaption class="pad"><h3>CS301: Computer Architecture</h3><p>Saylor University, April 2026</p></figcaption>
+      </figure>
+      <figure class="card">
+        <button class="cert-open" data-full="images/cert-career-roadmap-seminar.jpg" aria-label="Enlarge certificate: DIU Day Long Seminar on Career Planning Roadmap"><img src="images/cert-career-roadmap-seminar.jpg" alt="Certificate of achievement: DIU Day Long Seminar on Career Planning Roadmap" onerror="this.onerror=null;this.src='images/placeholder.svg'"></button>
+        <figcaption class="pad"><h3>Day Long Seminar on Career Planning Roadmap</h3><p>Daffodil International University, April 2026</p></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <p class="label">// 05 contact</p>
+  <h2>Let's talk</h2>
+  <div class="two">
+    <ul class="contact-cards">
+      <li class="win">
+        <span>email</span>
+        <a href="mailto:aniksarkar2571815@gmail.com" id="mail">aniksarkar2571815@gmail.com</a>
+        <button class="copy" data-copy="aniksarkar2571815@gmail.com">Copy</button>
+      </li>
+      <li class="win">
+        <span>phone</span>
+        <a href="tel:+8801998592940">01998592940</a>
+        <button class="copy" data-copy="01998592940">Copy</button>
+      </li>
+    </ul>
+
+    <form id="contact-form" class="win">
+      <div class="bar"><i></i><i></i><i></i><span>send-message.sh</span></div>
+      <div class="body">
+        <label>Your name <input type="text" name="name" autocomplete="name" required></label>
+        <label>Your email <input type="email" name="email" autocomplete="email" required></label>
+        <label>Message <textarea name="message" rows="5" required></textarea></label>
+        <button class="btn" type="submit">./send</button>
+        <p class="hint">This opens your email app with the message ready to send.</p>
+      </div>
+    </form>
+  </div>
+
+  <h3 class="shell-title">Or ask my terminal</h3>
+  <div class="win shell" id="shell">
+    <div class="bar"><i></i><i></i><i></i><span>anik@portfolio: ~/terminal</span></div>
+    <div class="body">
+      <div class="out" id="shell-out" role="log" aria-live="polite"></div>
+      <form class="line" id="shell-form" autocomplete="off">
+        <label for="shell-in"><span class="g">$</span></label>
+        <input id="shell-in" type="text" spellcheck="false" autocapitalize="off" autocomplete="off" placeholder="type a command, e.g. help">
+      </form>
+      <div class="quick" aria-label="Quick commands">
+        <button type="button" data-cmd="help">help</button>
+        <button type="button" data-cmd="about">about</button>
+        <button type="button" data-cmd="skills">skills</button>
+        <button type="button" data-cmd="project">project</button>
+        <button type="button" data-cmd="certs">certs</button>
+        <button type="button" data-cmd="contact">contact</button>
+        <button type="button" data-cmd="matrix">matrix</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>&copy; <span id="year"></span> Anik Sarker &middot; built with HTML, CSS &amp; JavaScript</p>
+</footer>
+
+<nav class="dock" aria-label="Sections">
+  <a href="#home" class="on"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/></svg>Home</a>
+  <a href="#about"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 4-7 8-7s7 2 8 7"/></svg>About</a>
+  <a href="#projects"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Project</a>
+  <a href="#skills"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>Skills</a>
+  <a href="#journey"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.5 6H15a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6h6.5"/></svg>Journey</a>
+  <a href="#contact"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Contact</a>
+</nav>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<dialog id="viewer">
+  <form method="dialog"><button class="btn soft close">Close</button></form>
+  <img id="viewer-img" alt="Certificate enlarged">
+</dialog>
+
+<script src="js/script.js"></script>
+<script src="js/effects.js"></script>
+</body>
+</html>
